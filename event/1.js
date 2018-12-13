@@ -14,8 +14,7 @@ class Person extends EventEmitter {
 
   growUp() {
     setInterval(() => {
-      this.year++
-      this.emit('growUp', this.year)
+      this.emit('growUp', this.year++)
     }, 1000)
   }
 }
